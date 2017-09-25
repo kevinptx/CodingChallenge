@@ -38,7 +38,7 @@ function sayHello() {
   console.log(calcAge(2017));
   //2017 - 1835 = 182
 
-  // Starting with the basic function given below, write a function called sumOddNumbers that will print to the console and return the sum of all the odd numbers from 1 to 3000.  Consider using a loop, and don't forget to call the function afterwards!//
+  // Starting with the basic function given below, write a function called sumOddNumbers that will print to the console and return the sum of all the odd numbers from 1 to 3000.  Consider using a loop. call the function sumOddNumbers(); at the end.//
 
 //This is my preferred way:
 function sumOddNumbers() {
