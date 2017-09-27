@@ -1,3 +1,6 @@
+//Coding Challenge Questions
+
+
 //Declare two variables, a string and an integer named fullName and birthYear, and set them equal to "Mark Twain" and 1835.
 
 var fullName = "Mark Twain";
@@ -8,10 +11,7 @@ myArray = []
 
 //Add the variables from the first question (fullName and birthYear) to myArray using the push method.  Print (console.log) myArray to the console.
 //The push() method adds one or more elements to the end of an array and returns the new length of the array.
-myArray.push({
-  fullName: fullName,
-  birthYear: birthYear
-  });
+myArray.push(fullName, birthYear);
 console.log(myArray)
 
 // Declare a variable named splitName. Set it equal to the variable from question 1, fullName. Split fullName into two separate objects in an array by using the split method.  splitName should equal ["Mark", "Twain"] when printed to the console.  Print splitName to the console.
@@ -24,12 +24,13 @@ var splitName = fullName.split(' ');
 console.log(splitName);
 
 
-// Write a simple function that takes no parameters called sayHello.  When called, this function should print "Hello, ____!" to the console, where the blank is equal to the first index value in the splitName array from the previous question.  Call the function. Remember that the first index value of an array is [0], the 2nd would be [1] and so on...
-function sayHello() {
+// Write a simple function that takes no parameters called myNameIs.  When called, this function should print "My name is ____!" to the console, where the blank is equal to the first index value in the splitName array from the previous question.  Call the function. Remember that the first index value of an array is [0], the 2nd would be [1] and so on...
+//The output should be "My name is Mark"
+function myNameIs() {
   var firstIndex = splitName[0];
-  console.log('Hello, ' + firstIndex + '!')
+  console.log('My name is ' + firstIndex)
 }
-  sayHello();
+  myNameIs();
 
   // Write another function called calcAge.  This function should take one parameter, a year, and it should return the implied age of Mark Twain.  Call the function passing the current year as the parameter.
   function calcAge(now) {
